@@ -16,8 +16,8 @@ namespace CowSignalR.Tests
             using (WebApp.Start<Startup>("http://localhost:12345"))
             {
                 var httpclient = new HttpClient() { BaseAddress = new Uri("http://localhost:12345") };
-                //var httpclient = new HttpClient() { BaseAddress = new Uri("http://wingis/cow/cowhub.html") };
-                var response = httpclient.GetAsync("cowhub.html").Result.IsSuccessStatusCode;
+                //var httpclient = new HttpClient() { BaseAddress = new Uri("http://wingis/cow/cow.html") };
+                var response = httpclient.GetAsync("cowhhnk.html").Result.IsSuccessStatusCode;
                 //var result = response.IsSuccessStatusCode; 
                 //Assert.IsTrue(response);
             }

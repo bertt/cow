@@ -14,7 +14,7 @@ namespace CowSignalR
         public override Task OnDisconnected()
         {
             Clients.Others.userDisconnected(Context.ConnectionId);
-            return base.OnDisconnected();
+			return base.OnDisconnected();
         }
 
         public override Task OnReconnected()
